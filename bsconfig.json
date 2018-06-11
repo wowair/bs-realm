@@ -1,0 +1,22 @@
+{
+  "name": "bs-realm",
+  "bsc-flags": ["-bs-super-errors", "-warn-error +a"],
+  "suffix": ".bs.js",
+  "sources": [
+    {
+      "dir": "src"
+    },
+    {
+      "dir": "__tests__",
+      "type": "dev"
+    }
+  ],
+  "bs-dev-dependencies": ["@glennsl/bs-jest"],
+  "refmt": 3,
+  "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": true
+    }
+  ]
+}
