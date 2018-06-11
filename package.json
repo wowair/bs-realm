@@ -28,6 +28,7 @@
    "scripts": {
     "clean": "node ./node_modules/bs-platform/lib/bsb -clean-world",
     "watch": "node ./node_modules/bs-platform/lib/bsb -clean-world -make-world -w",
-    "build": "node ./node_modules/bs-platform/lib/bsb -make-world -clean-world"
+    "build": "node ./node_modules/bs-platform/lib/bsb -make-world -clean-world",
+    "test": "jest"
   }
 }
