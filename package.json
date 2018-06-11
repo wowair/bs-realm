@@ -1,0 +1,33 @@
+{
+  "name": "bs-realm",
+  "version": "0.1.0",
+  "description": "Bucklescript bindings for realm js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wowair/bs-realm.git"
+  },
+  "keywords": [
+    "reason",
+    "bucklescript",
+    "realm-js",
+    "react-native"
+  ],
+  "author": "Alexander Annas Helgason <alliannas@wow.is>, Gunnar Gylfason <gunnarg@wow.is>, Kristinn Svansson <kristinns@wow.is>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wowair/bs-realm/issues"
+  },
+  "homepage": "https://github.com/wowair/bs-realm#readme",
+  "peerDependencies": {
+    "realm-js": ">=2.8.1"
+  },
+  "devDependencies": {
+    "bs-platform": "^3.1.5",
+    "@glennsl/bs-jest": "^0.4.2"
+  },
+   "scripts": {
+    "clean": "node ./node_modules/bs-platform/lib/bsb -clean-world",
+    "watch": "node ./node_modules/bs-platform/lib/bsb -clean-world -make-world -w",
+    "build": "node ./node_modules/bs-platform/lib/bsb -make-world -clean-world"
+  }
+}
