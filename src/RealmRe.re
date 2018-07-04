@@ -11,7 +11,8 @@ module Result = {
 [@bs.module "realm"]
 external openRealm : Js.t('a) => Js.Promise.t(t) = "open";
 
-[@bs.new] external realm : Js.t('a) => t = "Realm";
+[@bs.module]
+[@bs.new] external realm : Js.t('a) => t = "";
 
 [@bs.send] external objects : (t, string) => Result.t = "";
 
