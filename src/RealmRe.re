@@ -26,6 +26,8 @@ external openRealm : Js.t('a) => Js.Promise.t(t) = "open";
 
 [@bs.send] external delete : (t, array(Js.Json.t)) => unit = "";
 
+[@bs.send] external deleteAll : (t) => unit = "";
+
 type schemaDataType =
   | String
   | OptionalString
